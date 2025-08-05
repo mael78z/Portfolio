@@ -401,11 +401,11 @@ a.btn i {
 
 /* ----- PROJECTS BOX ----- */
 .project-container{
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    gap: 20px;
+     display: flex;
+    justify-content: center;
+    gap: 140px;
     flex-wrap: wrap;
+    padding: 0 40px;
 }
 
 .project-box {
@@ -413,10 +413,12 @@ a.btn i {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 30%;
+    /*width: 30%; */
+    width: calc(33.333% - 40px);
+    max-width: 320px;
     padding: 20px;
     background: var(--color-white);
-    border: 1px solid rgba(0, 0, 0, 0.05); /* Bordure douce */
+    border: 1px solid rgba(0, 0, 0, 0.05);
     border-radius: 20px;
     box-shadow: 1px 8px 10px 2px var(--first-shadow-color);
     transition: transform 0.4s ease, box-shadow 0.4s ease;
